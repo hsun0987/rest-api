@@ -1,9 +1,7 @@
 package com.example.rest_api.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.example.rest_api.model.BookQueryParam;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api")
@@ -29,5 +27,22 @@ public class RestApiController {
         msg = msg.toUpperCase();
 
         return msg;
+    }
+
+    @GetMapping(path= "/book")
+    public void queryParam(
+            BookQueryParam bookQueryParam
+    ){
+        System.out.println(bookQueryParam);
+    }
+
+    // 두 수를 입력 받아 덧셈, 곱셈 구하기
+    @GetMapping(path= "/cal")
+    public void calculation(
+           @RequestParam int a,
+           @RequestParam int b
+    ){
+        System.out.println(a+b);
+        System.out.println(a*b);
     }
 }
