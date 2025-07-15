@@ -2,6 +2,7 @@ package com.example.rest_api.controller;
 
 
 import com.example.rest_api.model.BookRequest;
+import com.example.rest_api.model.UserRequest;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,5 +18,13 @@ public class PostApiController {
     ){
         System.out.println(bookRequest);
         return bookRequest.toString();
+    }
+
+    @PostMapping("/user")
+    public UserRequest User(
+            @RequestBody UserRequest userRequest
+    ){
+        System.out.println(userRequest);
+        return userRequest;
     }
 }
