@@ -42,4 +42,11 @@ public class UserApiController {
     ){
         userService.delete(id);
     }
+
+    @GetMapping("/score")
+    public List<UserEntity> filterScore(
+        @RequestParam int score
+    ){
+        return userService.filterScore(score);
+    }
 }

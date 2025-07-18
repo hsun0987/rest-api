@@ -30,4 +30,8 @@ public class UserService {
     public void delete(Long id){
         userRepository.delete(id);
     }
+
+    public List<UserEntity> filterScore(int score){
+        return userRepository.findAllScoreGreaterThen(score);
+    }
 }
