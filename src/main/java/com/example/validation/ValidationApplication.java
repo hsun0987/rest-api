@@ -1,6 +1,5 @@
 package com.example.validation;
 
-import com.example.rest_api.RestApiApplication;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
