@@ -31,7 +31,12 @@ public class UserService {
     }
 
     public List<UserEntity> filterScore(int score){
-        return null;
-       // return userRepository.findAllScoreGreaterThen(score);
+        //return null;
+        return userRepository.findAllByScoreGreaterThanEqual(score);
     }
+
+    public List<UserEntity> filterScore(int min, int max){
+        return userRepository.score(min, max);
+    }
+
 }
