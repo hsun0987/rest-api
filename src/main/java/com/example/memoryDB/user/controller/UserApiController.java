@@ -1,9 +1,8 @@
-package com.example.demo.user.controller;
+package com.example.memoryDB.user.controller;
 
-import com.example.demo.user.model.UserEntity;
-import com.example.demo.user.service.UserService;
+import com.example.memoryDB.user.model.UserEntity;
+import com.example.memoryDB.user.service.UserService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -40,7 +39,7 @@ public class UserApiController {
     public void delete(
             @PathVariable Long id
     ){
-        userService.delete(id);
+        // userService.delete(id);
     }
 
     @GetMapping("/score")

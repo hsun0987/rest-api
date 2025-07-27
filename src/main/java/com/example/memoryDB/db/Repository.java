@@ -1,4 +1,4 @@
-package com.example.demo.db;
+package com.example.memoryDB.db;
 
 public interface Repository<T, ID> {
 }

@@ -1,6 +1,6 @@
-package com.example.demo.db;
+package com.example.memoryDB.db;
 
-import com.example.demo.entity.Entity;
+import com.example.memoryDB.entity.Entity;
 
 import java.util.*;
 import java.util.stream.Collectors;

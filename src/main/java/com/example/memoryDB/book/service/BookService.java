@@ -1,8 +1,7 @@
-package com.example.demo.book.service;
+package com.example.memoryDB.book.service;
 
-import com.example.demo.book.db.entity.BookEntity;
-import com.example.demo.book.db.repository.BookRepository;
-import lombok.RequiredArgsConstructor;
+import com.example.memoryDB.book.db.entity.BookEntity;
+import com.example.memoryDB.book.db.repository.BookRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

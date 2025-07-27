@@ -1,4 +1,4 @@
-package com.example.demo.db;
+package com.example.memoryDB.db;
 
 import java.util.List;
 import java.util.Optional;

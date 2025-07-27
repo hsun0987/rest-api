@@ -1,7 +1,7 @@
-package com.example.demo.book.controller;
+package com.example.memoryDB.book.controller;
 
-import com.example.demo.book.db.entity.BookEntity;
-import com.example.demo.book.service.BookService;
+import com.example.memoryDB.book.db.entity.BookEntity;
+import com.example.memoryDB.book.service.BookService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

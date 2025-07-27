@@ -1,8 +1,7 @@
-package com.example.demo.user.service;
+package com.example.memoryDB.user.service;
 
-import com.example.demo.user.db.UserRepository;
-import com.example.demo.user.model.UserEntity;
-import lombok.RequiredArgsConstructor;
+import com.example.memoryDB.user.db.UserRepository;
+import com.example.memoryDB.user.model.UserEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -27,11 +26,12 @@ public class UserService {
         return userRepository.findById(id);
     }
 
-    public void delete(Long id){
+    public void delete(UserEntity id){
         userRepository.delete(id);
     }
 
     public List<UserEntity> filterScore(int score){
-        return userRepository.findAllScoreGreaterThen(score);
+        return null;
+       // return userRepository.findAllScoreGreaterThen(score);
     }
 }
